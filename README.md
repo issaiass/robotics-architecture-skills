@@ -438,12 +438,12 @@ To add or change a skill:
 
 | Skill | Colour in every figure |
 | --- | --- |
-| `ros2-robotics-architecture` | ![blue](https://img.shields.io/badge/-%23257de0-257de0?style=flat-square) blue |
-| `docker-ros2-robotics-architecture` | ![orange](https://img.shields.io/badge/-%23f47230-f47230?style=flat-square) orange |
-| `robotics-simulation-validation` | ![aqua](https://img.shields.io/badge/-%2300b894-00b894?style=flat-square) aqua |
-| `robot-learning` | ![yellow](https://img.shields.io/badge/-%23f2a600-f2a600?style=flat-square) yellow |
-| `robotics-agentic-ai-architecture` | ![magenta](https://img.shields.io/badge/-%23ee7fac-ee7fac?style=flat-square) magenta |
-| `robotics-web-architecture` | ![green](https://img.shields.io/badge/-%23008a17-008a17?style=flat-square) green |
+| `ros2-robotics-architecture` | ![blue](https://img.shields.io/badge/blue-257de0?style=flat-square) |
+| `docker-ros2-robotics-architecture` | ![orange](https://img.shields.io/badge/orange-f47230?style=flat-square) |
+| `robotics-simulation-validation` | ![aqua](https://img.shields.io/badge/aqua-00b894?style=flat-square) |
+| `robot-learning` | ![yellow](https://img.shields.io/badge/yellow-f2a600?style=flat-square) |
+| `robotics-agentic-ai-architecture` | ![magenta](https://img.shields.io/badge/magenta-ee7fac?style=flat-square) |
+| `robotics-web-architecture` | ![green](https://img.shields.io/badge/green-008a17?style=flat-square) |
 
 </details>
 
