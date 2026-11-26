@@ -287,12 +287,12 @@ flowchart LR
     Q -->|"missions, planner or LLM, tools, approvals"| A["robotics-agentic-ai-architecture"]
     Q -->|"scenes, physics, scenarios, SIL / HIL"| S["robotics-simulation-validation"]
     Q -->|"RL, imitation, VLA, datasets, evaluation"| L["robot-learning"]
-    style R fill:#e8f1fc,stroke:#257de0
-    style D fill:#fdeee6,stroke:#f47230
-    style W fill:#e0f1e3,stroke:#008a17
-    style A fill:#fcebf2,stroke:#ee7fac
-    style S fill:#e0f7f1,stroke:#00b894
-    style L fill:#fdf3dc,stroke:#f2a600
+    style R fill:#e8f1fc,stroke:#257de0,stroke-width:2px,color:#1f2328
+    style D fill:#fdeee6,stroke:#f47230,stroke-width:2px,color:#1f2328
+    style W fill:#e0f1e3,stroke:#008a17,stroke-width:2px,color:#1f2328
+    style A fill:#fcebf2,stroke:#ee7fac,stroke-width:2px,color:#1f2328
+    style S fill:#e0f7f1,stroke:#00b894,stroke-width:2px,color:#1f2328
+    style L fill:#fdf3dc,stroke:#f2a600,stroke-width:2px,color:#1f2328
 ```
 
 | Skill | Example request | You get |
