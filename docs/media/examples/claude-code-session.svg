@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration: Claude Code session using the ros2-robotics-architecture skill</title>
+  <desc id="desc">A terminal where the user invokes the ros2-robotics-architecture skill on a differential-drive workspace. The agent loads the skill, reads launch and controller files, inspects the cmd_vel topic in an isolated simulation, reports three findings with evidence labels, writes ARCHITECTURE.md and README.md, and states that the physical robot path is not verified.</desc>
+  <style>
+    .m{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace;font-size:14px;fill:#e6edf3}
+    .s{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .dim{fill:#8b949e}
+    .acc{fill:#79c0ff}
+    .ok{fill:#3fb950}
+    .b{font-weight:700}
+    .hi{fill:#ff7b72}
+    .me{fill:#d29922}
+    .ev{fill:#a5d6ff}
+  </style>
+  <rect x="0.5" y="0.5" width="1199" height="519" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5,40 V14.5 A14,14 0 0 1 14.5,0.5 H1185.5 A14,14 0 0 1 1199.5,14.5 V40 Z" fill="#161b22"/>
+  <line x1="0.5" y1="40" x2="1199.5" y2="40" stroke="#30363d"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text x="600" y="25" text-anchor="middle" class="s" style="font-size:13px;fill:#8b949e">claude&#160;&#160;—&#160;&#160;~/diffbot_ws</text>
+  <rect x="1062" y="10" width="120" height="20" rx="10" fill="#30363d"/>
+  <text x="1122" y="24" text-anchor="middle" class="s" style="font-size:11px;font-weight:700;letter-spacing:1px;fill:#e6edf3">ILLUSTRATION</text>
+
+  <text x="28" y="76" class="m"><tspan class="dim">&gt; </tspan><tspan class="acc">/ros2-robotics-architecture</tspan> Audit how /cmd_vel reaches the wheels in simulation</text>
+  <text x="28" y="99" class="m">&#160; and write ARCHITECTURE.md and README.md for this workspace.</text>
+
+  <text x="28" y="145" class="m"><tspan class="ok">● </tspan><tspan class="b">Skill</tspan><tspan class="dim">(ros2-robotics-architecture)</tspan></text>
+  <text x="28" y="168" class="m dim">&#160; └ Loaded workflow: 6 steps · documentation standard: 11 sections</text>
+  <text x="28" y="191" class="m"><tspan class="ok">● </tspan><tspan class="b">Read</tspan><tspan class="dim">(src/diffbot_bringup/launch/sim.launch.py)</tspan><tspan class="dim">&#160; +14 files</tspan></text>
+  <text x="28" y="214" class="m"><tspan class="ok">● </tspan><tspan class="b">Bash</tspan><tspan class="dim">(ros2 topic info -v /cmd_vel)</tspan><tspan class="dim">&#160;&#160;&#160;# isolated Gazebo sim, ROS_DOMAIN_ID=42</tspan></text>
+  <text x="28" y="237" class="m dim">&#160; └ Publisher count: 2&#160;&#160;&#160;teleop_twist_keyboard, controller_server</text>
+
+  <text x="48" y="283" class="m b">Findings</text>
+  <text x="860" y="283" class="m dim">evidence</text>
+  <line x1="48" y1="292" x2="1040" y2="292" stroke="#30363d"/>
+  <text x="48" y="314" class="m"><tspan class="hi">▲ high</tspan><tspan x="160">Two command producers on /cmd_vel and no twist_mux</tspan><tspan x="860" class="ev">runtime-verified</tspan></text>
+  <text x="48" y="337" class="m"><tspan class="me">■ medium</tspan><tspan x="160">robot_state_publisher runs without use_sim_time</tspan><tspan x="860" class="ev">source-verified</tspan></text>
+  <text x="48" y="360" class="m"><tspan class="dim">■ low</tspan><tspan x="160">odom → base_footprint TF published by controller and EKF</tspan><tspan x="860" class="ev">source-verified</tspan></text>
+
+  <text x="28" y="406" class="m"><tspan class="ok">● </tspan><tspan class="b">Write</tspan><tspan class="dim">(ARCHITECTURE.md)</tspan><tspan x="300" class="dim">Sections 1–11 · 2 diagrams · 9 graph contracts</tspan></text>
+  <text x="28" y="429" class="m"><tspan class="ok">● </tspan><tspan class="b">Write</tspan><tspan class="dim">(README.md)</tspan><tspan x="300" class="dim">Section 8 walkthrough · verified in simulation only</tspan></text>
+
+  <text x="28" y="475" class="m"><tspan class="me">&#160; Not verified:</tspan> physical robot path (needs the robot, its motor driver and your operating procedure).</text>
+</svg>

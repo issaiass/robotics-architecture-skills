@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Robotics Architecture Skills: which skill owns which layer</title>
+  <desc id="desc">A robot software stack with five layers (operator web, mission agent, learned policies, ROS 2 graph and control, containers and deployment) each mapped to one skill, a simulation and validation skill spanning all layers, and the documents every skill delivers.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace}
+    .h1{font-size:26px;font-weight:700;fill:#1f2328}
+    .sub{font-size:15px;fill:#59636e}
+    .cap{font-size:11px;font-weight:600;letter-spacing:1.2px;fill:#59636e}
+    .t{font-size:17px;font-weight:600;fill:#1f2328}
+    .d{font-size:13px;fill:#59636e}
+    .chip{font-size:13px;fill:#1f2328}
+    .pt{font-size:16px;font-weight:700;fill:#1f2328}
+    .pm{font-size:14px;font-weight:700;fill:#1f2328}
+    .ev{font-size:12px;fill:#1f2328}
+  </style>
+  <defs>
+    <marker id="tick" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#00a888"/>
+    </marker>
+    <clipPath id="c1"><rect x="40" y="136" width="700" height="72" rx="10"/></clipPath>
+    <clipPath id="c2"><rect x="40" y="218" width="700" height="72" rx="10"/></clipPath>
+    <clipPath id="c3"><rect x="40" y="300" width="700" height="72" rx="10"/></clipPath>
+    <clipPath id="c4"><rect x="40" y="382" width="700" height="72" rx="10"/></clipPath>
+    <clipPath id="c5"><rect x="40" y="464" width="700" height="72" rx="10"/></clipPath>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="619" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+
+  <text x="40" y="58" class="sans h1">Robotics Architecture Skills</text>
+  <text x="40" y="86" class="sans sub">Six portable SKILL.md workflows. Each one owns a boundary of a robot software stack and writes the same evidence-based documents.</text>
+
+  <text x="64" y="124" class="sans cap">SYSTEM LAYER</text>
+  <text x="446" y="124" class="sans cap">SKILL THAT OWNS IT</text>
+  <text x="804" y="124" text-anchor="middle" class="sans cap">SPANS ALL</text>
+
+  <!-- Layer 1: web (slot 6 green) -->
+  <rect x="40" y="136" width="700" height="72" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="136" width="9" height="72" fill="#008a17" clip-path="url(#c1)"/>
+  <text x="66" y="166" class="sans t">Operator &amp; fleet web</text>
+  <text x="66" y="190" class="sans d">Dashboards · teleop · web API · robot gateway · telemetry</text>
+  <rect x="446" y="157" width="282" height="30" rx="15" fill="#e0f1e3" stroke="#008a17" stroke-opacity="0.35"/>
+  <circle cx="463" cy="172" r="5" fill="#008a17"/>
+  <text x="477" y="177" class="mono chip">robotics-web-architecture</text>
+
+  <!-- Layer 2: agentic (slot 5 magenta) -->
+  <rect x="40" y="218" width="700" height="72" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="218" width="9" height="72" fill="#ee7fac" clip-path="url(#c2)"/>
+  <text x="66" y="248" class="sans t">Mission &amp; agent layer</text>
+  <text x="66" y="272" class="sans d">Goal grounding · typed robot tools · approvals · recovery</text>
+  <rect x="446" y="239" width="282" height="30" rx="15" fill="#fcebf2" stroke="#ee7fac" stroke-opacity="0.6"/>
+  <circle cx="463" cy="254" r="5" fill="#ee7fac"/>
+  <text x="477" y="259" class="mono chip">robotics-agentic-ai-architecture</text>
+
+  <!-- Layer 3: learning (slot 4 yellow) -->
+  <rect x="40" y="300" width="700" height="72" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="300" width="9" height="72" fill="#f2a600" clip-path="url(#c3)"/>
+  <text x="66" y="330" class="sans t">Learned policies</text>
+  <text x="66" y="354" class="sans d">RL · imitation / offline · VLA · bounded policy actions</text>
+  <rect x="446" y="321" width="282" height="30" rx="15" fill="#fdf3dc" stroke="#f2a600" stroke-opacity="0.6"/>
+  <circle cx="463" cy="336" r="5" fill="#f2a600"/>
+  <text x="477" y="341" class="mono chip">robot-learning</text>
+
+  <!-- Layer 4: ros2 (slot 1 blue) -->
+  <rect x="40" y="382" width="700" height="72" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="382" width="9" height="72" fill="#257de0" clip-path="url(#c4)"/>
+  <text x="66" y="412" class="sans t">ROS 2 graph, control &amp; drivers</text>
+  <text x="66" y="436" class="sans d">Packages · launch · URDF · QoS · TF · ros2_control · drivers</text>
+  <rect x="446" y="403" width="282" height="30" rx="15" fill="#e8f1fc" stroke="#257de0" stroke-opacity="0.45"/>
+  <circle cx="463" cy="418" r="5" fill="#257de0"/>
+  <text x="477" y="423" class="mono chip">ros2-robotics-architecture</text>
+
+  <!-- Layer 5: docker (slot 2 orange) -->
+  <rect x="40" y="464" width="700" height="72" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="464" width="9" height="72" fill="#f47230" clip-path="url(#c5)"/>
+  <text x="66" y="494" class="sans t">Containers, build &amp; deployment</text>
+  <text x="66" y="518" class="sans d">Dockerfiles · Bake · Compose · devices · DDS discovery</text>
+  <rect x="446" y="485" width="282" height="30" rx="15" fill="#fdeee6" stroke="#f47230" stroke-opacity="0.5"/>
+  <circle cx="463" cy="500" r="5" fill="#f47230"/>
+  <text x="477" y="505" class="mono chip">docker-ros2-robotics-architecture</text>
+
+  <!-- Simulation bar (slot 3 aqua) spanning all layers -->
+  <rect x="756" y="136" width="96" height="400" rx="10" fill="#e0f7f1" stroke="#00b894" stroke-width="1.5"/>
+  <g transform="translate(796,336) rotate(-90)"><text x="0" y="0" text-anchor="middle" class="sans t">Simulation &amp; validation</text></g>
+  <g transform="translate(822,336) rotate(-90)"><text x="0" y="0" text-anchor="middle" class="mono chip">robotics-simulation-validation</text></g>
+  <line x1="756" y1="172" x2="744" y2="172" stroke="#00a888" stroke-width="2" marker-end="url(#tick)"/>
+  <line x1="756" y1="254" x2="744" y2="254" stroke="#00a888" stroke-width="2" marker-end="url(#tick)"/>
+  <line x1="756" y1="336" x2="744" y2="336" stroke="#00a888" stroke-width="2" marker-end="url(#tick)"/>
+  <line x1="756" y1="418" x2="744" y2="418" stroke="#00a888" stroke-width="2" marker-end="url(#tick)"/>
+  <line x1="756" y1="500" x2="744" y2="500" stroke="#00a888" stroke-width="2" marker-end="url(#tick)"/>
+
+  <!-- Base slab -->
+  <rect x="40" y="548" width="812" height="48" rx="10" fill="#eaeef2" stroke="#d0d7de"/>
+  <text x="446" y="578" text-anchor="middle" class="sans t" style="font-size:15px;fill:#424a53">Physical robot&#160;&#160;·&#160;&#160;bench / HIL rig&#160;&#160;·&#160;&#160;isolated simulator</text>
+
+  <!-- Right panel: deliverables -->
+  <rect x="876" y="136" width="284" height="460" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="898" y="170" class="sans pt">Every skill delivers</text>
+
+  <g>
+    <path d="M898,190 h16 l6,6 v24 h-22 z" fill="#eaeef2" stroke="#8c959f"/>
+    <line x1="902" y1="202" x2="914" y2="202" stroke="#8c959f"/><line x1="902" y1="208" x2="916" y2="208" stroke="#8c959f"/><line x1="902" y1="214" x2="912" y2="214" stroke="#8c959f"/>
+    <text x="932" y="204" class="mono pm">ARCHITECTURE.md</text>
+    <text x="932" y="224" class="sans d">Sections 1–11: structure, diagrams,</text>
+    <text x="932" y="242" class="sans d">contracts, deployment, security</text>
+  </g>
+  <g>
+    <path d="M898,270 h16 l6,6 v24 h-22 z" fill="#eaeef2" stroke="#8c959f"/>
+    <line x1="902" y1="282" x2="914" y2="282" stroke="#8c959f"/><line x1="902" y1="288" x2="916" y2="288" stroke="#8c959f"/><line x1="902" y1="294" x2="912" y2="294" stroke="#8c959f"/>
+    <text x="932" y="284" class="mono pm">README.md</text>
+    <text x="932" y="304" class="sans d">Section 8 walkthrough: clean</text>
+    <text x="932" y="322" class="sans d">checkout → verified result</text>
+  </g>
+  <g>
+    <circle cx="907" cy="360" r="8" fill="none" stroke="#8c959f" stroke-width="2"/>
+    <line x1="913" y1="366" x2="920" y2="373" stroke="#8c959f" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="932" y="364" class="sans pm">Audit findings</text>
+    <text x="932" y="384" class="sans d">File location · effect ·</text>
+    <text x="932" y="402" class="sans d">verification step</text>
+  </g>
+
+  <line x1="898" y1="430" x2="1138" y2="430" stroke="#d8dee4"/>
+  <text x="898" y="458" class="sans" style="font-size:14px;font-weight:600;fill:#1f2328">Every claim carries a label</text>
+
+  <rect x="898" y="474" width="116" height="26" rx="13" fill="#ffffff" stroke="#8c959f" stroke-dasharray="4 3"/>
+  <text x="956" y="491" text-anchor="middle" class="sans ev">Proposed</text>
+  <rect x="1022" y="474" width="116" height="26" rx="13" fill="#cce3fd"/>
+  <text x="1080" y="491" text-anchor="middle" class="sans ev">Source-verified</text>
+  <rect x="898" y="508" width="116" height="26" rx="13" fill="#84b9f3"/>
+  <text x="956" y="525" text-anchor="middle" class="sans ev">Runtime-verified</text>
+  <rect x="1022" y="508" width="116" height="26" rx="13" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="1.5 3"/>
+  <text x="1080" y="525" text-anchor="middle" class="sans ev">Unresolved</text>
+
+  <text x="898" y="566" class="sans d" style="font-style:italic">Simulation evidence is never</text>
+  <text x="898" y="584" class="sans d" style="font-style:italic">reported as hardware evidence.</text>
+</svg>

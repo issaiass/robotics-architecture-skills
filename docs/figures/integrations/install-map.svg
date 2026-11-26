@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Where to put the skills for each AI tool</title>
+  <desc id="desc">The skills folder of this repository is delivered by five routes: the shared .agents/skills folder used by Codex, Cursor, Windsurf, GitHub Copilot, Gemini CLI and Grok at user scope; the .claude/skills folder used by Claude Code and also read by Cursor, Copilot and Grok Build; the .grok/skills folder for Grok Build; uploading a ZIP or file for Claude.ai and Perplexity; and pasting or attaching SKILL.md in any chat.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace}
+    .h1{font-size:26px;font-weight:700;fill:#1f2328}
+    .sub{font-size:15px;fill:#59636e}
+    .cap{font-size:11px;font-weight:600;letter-spacing:1.2px;fill:#59636e}
+    .rt{font-size:15px;font-weight:700;fill:#1f2328}
+    .rp{font-size:13px;fill:#1f2328}
+    .rd{font-size:12px;fill:#59636e}
+    .tool{font-size:13px;fill:#1f2328}
+    .also{font-size:13px;fill:#424a53}
+    .badge{font-size:11px;font-weight:700;fill:#ffffff}
+    .fn{font-size:12px;fill:#59636e}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="629" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="58" class="sans h1">Where to put the skills for each AI tool</text>
+  <text x="40" y="86" class="sans sub">One source folder, five delivery routes. The shared .agents/skills/ folder covers most agentic coding tools (paths checked 2026-11-25).</text>
+
+  <text x="350" y="112" class="sans cap">DELIVERY ROUTE</text>
+  <text x="800" y="112" class="sans cap">AI TOOLS THAT USE IT</text>
+
+  <!-- Source -->
+  <rect x="40" y="290" width="250" height="130" rx="12" fill="#ffffff" stroke="#1f2328" stroke-width="1.5"/>
+  <text x="62" y="318" class="sans cap">THIS REPOSITORY</text>
+  <text x="62" y="346" class="mono" style="font-size:17px;font-weight:700;fill:#1f2328">skills/</text>
+  <text x="62" y="370" class="mono rp">&lt;skill-name&gt;/SKILL.md</text>
+  <text x="62" y="398" class="sans rd">6 skills · 1 folder each</text>
+
+  <!-- Connectors source -> routes -->
+  <g fill="none" stroke="#8c959f" stroke-width="1.5">
+    <path d="M290,355 C322,355 318,166 346,166" marker-end="url(#ar)"/>
+    <path d="M290,355 C322,355 318,262 346,262" marker-end="url(#ar)"/>
+    <path d="M290,355 C322,355 318,358 346,358" marker-end="url(#ar)"/>
+    <path d="M290,355 C322,355 318,454 346,454" marker-end="url(#ar)"/>
+    <path d="M290,355 C322,355 318,550 346,550" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- Route A -->
+  <rect x="350" y="124" width="420" height="84" rx="10" fill="#e8f1fc" stroke="#257de0" stroke-width="2"/>
+  <text x="368" y="152" class="sans rt">A · Shared standard folder</text>
+  <rect x="660" y="137" width="94" height="20" rx="10" fill="#1757ac"/><text x="707" y="151" text-anchor="middle" class="sans badge">RECOMMENDED</text>
+  <text x="368" y="176" class="mono rp">.agents/skills/&#160;&#160;&#160;&#160;&#160;&#160;project scope</text>
+  <text x="368" y="196" class="mono rp">~/.agents/skills/&#160;&#160;&#160;&#160;user scope</text>
+
+  <!-- Route B -->
+  <rect x="350" y="220" width="420" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="368" y="248" class="sans rt">B · Claude Code folder</text>
+  <text x="368" y="272" class="mono rp">.claude/skills/&#160;&#160;&#160;&#160;&#160;&#160;project scope</text>
+  <text x="368" y="292" class="mono rp">~/.claude/skills/&#160;&#160;&#160;&#160;user scope</text>
+
+  <!-- Route C -->
+  <rect x="350" y="316" width="420" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="368" y="344" class="sans rt">C · Grok Build folder</text>
+  <text x="368" y="368" class="mono rp">.grok/skills/&#160;&#160;·&#160;&#160;~/.grok/skills/</text>
+  <text x="368" y="388" class="mono rp">or [skills] paths in ~/.grok/config.toml</text>
+
+  <!-- Route D -->
+  <rect x="350" y="412" width="420" height="84" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="368" y="440" class="sans rt">D · Upload a ZIP or SKILL.md</text>
+  <text x="368" y="464" class="sans rp">Zip one skill folder and upload it in the app,</text>
+  <text x="368" y="484" class="sans rp">or register it through the vendor's skills API</text>
+
+  <!-- Route E -->
+  <rect x="350" y="508" width="420" height="84" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-dasharray="6 4"/>
+  <text x="368" y="536" class="sans rt">E · Paste or attach (fallback)</text>
+  <text x="368" y="560" class="sans rp">Attach SKILL.md to a project, space or chat and</text>
+  <text x="368" y="580" class="sans rp">ask the model to follow its workflow</text>
+
+  <!-- Connectors routes -> tools -->
+  <g stroke="#8c959f" stroke-width="1.5">
+    <line x1="770" y1="166" x2="794" y2="166" marker-end="url(#ar)"/>
+    <line x1="770" y1="262" x2="794" y2="262" marker-end="url(#ar)"/>
+    <line x1="770" y1="358" x2="794" y2="358" marker-end="url(#ar)"/>
+    <line x1="770" y1="454" x2="794" y2="454" marker-end="url(#ar)"/>
+    <line x1="770" y1="550" x2="794" y2="550" marker-end="url(#ar)"/>
+  </g>
+
+  <!-- Tool chips A -->
+  <g class="sans tool">
+    <rect x="800" y="136" width="104" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="852" y="153" text-anchor="middle">OpenAI Codex</text>
+    <rect x="912" y="136" width="64" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="944" y="153" text-anchor="middle">Cursor</text>
+    <rect x="984" y="136" width="80" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="1024" y="153" text-anchor="middle">Windsurf</text>
+    <rect x="800" y="170" width="118" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="859" y="187" text-anchor="middle">GitHub Copilot</text>
+    <rect x="926" y="170" width="92" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="972" y="187" text-anchor="middle">Gemini CLI</text>
+    <rect x="1026" y="170" width="110" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="1081" y="187" text-anchor="middle">Grok Build ¹</text>
+  </g>
+
+  <!-- Tool chips B -->
+  <g class="sans tool">
+    <rect x="800" y="232" width="100" height="26" rx="13" fill="#ffffff" stroke="#1f2328" stroke-width="1.5"/><text x="850" y="249" text-anchor="middle" style="font-weight:700">Claude Code</text>
+    <text x="800" y="287" class="also">also read by</text>
+    <rect x="886" y="268" width="64" height="26" rx="13" fill="#f6f8fa" stroke="#d0d7de"/><text x="918" y="285" text-anchor="middle">Cursor</text>
+    <rect x="956" y="268" width="118" height="26" rx="13" fill="#f6f8fa" stroke="#d0d7de"/><text x="1015" y="285" text-anchor="middle">GitHub Copilot</text>
+    <rect x="1080" y="268" width="76" height="26" rx="13" fill="#f6f8fa" stroke="#d0d7de"/><text x="1118" y="285" text-anchor="middle">Grok</text>
+  </g>
+
+  <!-- Tool chips C -->
+  <g class="sans tool">
+    <rect x="800" y="345" width="114" height="26" rx="13" fill="#ffffff" stroke="#1f2328" stroke-width="1.5"/><text x="857" y="362" text-anchor="middle" style="font-weight:700">Grok Build CLI</text>
+  </g>
+
+  <!-- Tool chips D -->
+  <g class="sans tool">
+    <rect x="800" y="424" width="152" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="876" y="441" text-anchor="middle">Claude.ai / Desktop</text>
+    <rect x="960" y="424" width="152" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="1036" y="441" text-anchor="middle">Perplexity Computer</text>
+    <rect x="800" y="458" width="160" height="26" rx="13" fill="#ffffff" stroke="#8c959f"/><text x="880" y="475" text-anchor="middle">Perplexity Agent API</text>
+  </g>
+
+  <!-- Tool chips E -->
+  <g class="sans tool">
+    <rect x="800" y="520" width="84" height="26" rx="13" fill="#ffffff" stroke="#8c959f" stroke-dasharray="4 3"/><text x="842" y="537" text-anchor="middle">Grok chat</text>
+    <rect x="892" y="520" width="138" height="26" rx="13" fill="#ffffff" stroke="#8c959f" stroke-dasharray="4 3"/><text x="961" y="537" text-anchor="middle">Perplexity Spaces</text>
+    <rect x="800" y="554" width="106" height="26" rx="13" fill="#ffffff" stroke="#8c959f" stroke-dasharray="4 3"/><text x="853" y="571" text-anchor="middle">any LLM chat</text>
+  </g>
+
+  <text x="40" y="614" class="sans fn">¹ Grok Build reads ~/.agents/skills/ at user scope only. Windsurf also reads .windsurf/skills/. Cursor also reads .codex/skills/. Exact paths per tool: docs/guides/.</text>
+</svg>

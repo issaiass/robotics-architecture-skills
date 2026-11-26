@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Anatomy of a skill</title>
+  <desc id="desc">A SKILL.md file split into four parts: frontmatter that is always loaded, a workflow loaded on activation, an embedded documentation standard that acts as the template, and references to upstream documentation. A strip shows progressive disclosure from metadata to body to linked documents.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace}
+    .h1{font-size:26px;font-weight:700;fill:#1f2328}
+    .sub{font-size:15px;fill:#59636e}
+    .code{font-size:13px;fill:#1f2328}
+    .key{fill:#0550ae}
+    .dim{fill:#6e7781}
+    .hd{fill:#953800;font-weight:700}
+    .ct{font-size:16px;font-weight:700;fill:#1f2328}
+    .cd{font-size:14px;fill:#424a53}
+    .badge{font-size:14px;font-weight:700;fill:#ffffff}
+    .pill{font-size:13px;font-weight:600;fill:#1f2328}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#59636e"/>
+    </marker>
+    <clipPath id="file"><rect x="40" y="116" width="540" height="444" rx="10"/></clipPath>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="599" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="58" class="sans h1">Anatomy of a skill</text>
+  <text x="40" y="86" class="sans sub">A skill is one folder with one SKILL.md. The AI tool keeps a little of it in context all the time and loads the rest only when needed.</text>
+
+  <!-- File window -->
+  <g clip-path="url(#file)">
+    <rect x="40" y="116" width="540" height="444" fill="#ffffff"/>
+    <rect x="40" y="116" width="540" height="36" fill="#eaeef2"/>
+    <rect x="40" y="156" width="540" height="132" fill="#f1f6fd"/>
+    <rect x="40" y="290" width="540" height="138" fill="#ffffff"/>
+    <rect x="40" y="430" width="540" height="96" fill="#f1f6fd"/>
+    <rect x="40" y="528" width="540" height="32" fill="#ffffff"/>
+  </g>
+  <rect x="40" y="116" width="540" height="444" rx="10" fill="none" stroke="#d0d7de"/>
+  <line x1="40" y1="152" x2="580" y2="152" stroke="#d0d7de"/>
+  <text x="58" y="139" class="mono code dim">skills/ros2-robotics-architecture/SKILL.md</text>
+
+  <text x="60" y="178" class="mono code dim">---</text>
+  <text x="60" y="198" class="mono code"><tspan class="key">name:</tspan> ros2-robotics-architecture</text>
+  <text x="60" y="218" class="mono code"><tspan class="key">description:</tspan> &gt;-</text>
+  <text x="60" y="238" class="mono code">&#160; Design, document, audit, or update ROS 2</text>
+  <text x="60" y="258" class="mono code">&#160; robotics software architecture … Use for …</text>
+  <text x="60" y="278" class="mono code dim">---</text>
+
+  <text x="60" y="314" class="mono code hd"># ROS 2 Robotics Architecture</text>
+  <text x="60" y="336" class="mono code hd">## Workflow</text>
+  <text x="60" y="358" class="mono code">1. Identify the task and scope</text>
+  <text x="60" y="378" class="mono code">2. Read README, manifests, launch, models, tests</text>
+  <text x="60" y="398" class="mono code">3. Map the runtime&#160;&#160;4. Establish interface evidence</text>
+  <text x="60" y="418" class="mono code">5. Produce artifacts&#160;&#160;6. Review against checkout</text>
+
+  <text x="60" y="454" class="mono code hd">## Embedded documentation standard</text>
+  <text x="60" y="476" class="mono code">### 1. Project Structure&#160;&#160;&#160;### 2. System Diagram</text>
+  <text x="60" y="496" class="mono code">### 3. Core Components&#160;&#160;…&#160;&#160;### 11. Glossary</text>
+  <text x="60" y="516" class="mono code dim">| Responsibility | What to locate and record |</text>
+
+  <text x="60" y="549" class="mono code">See [ROS 2 QoS](…) · [ros2_control](…)</text>
+
+  <!-- Connectors -->
+  <line x1="580" y1="222" x2="602" y2="222" stroke="#8c959f" stroke-width="1.5"/>
+  <line x1="580" y1="359" x2="602" y2="359" stroke="#8c959f" stroke-width="1.5"/>
+  <line x1="580" y1="478" x2="602" y2="478" stroke="#8c959f" stroke-width="1.5"/>
+  <line x1="580" y1="544" x2="602" y2="544" stroke="#8c959f" stroke-width="1.5"/>
+
+  <!-- Badges -->
+  <circle cx="616" cy="222" r="14" fill="#1757ac"/><text x="616" y="227" text-anchor="middle" class="sans badge">A</text>
+  <circle cx="616" cy="359" r="14" fill="#1757ac"/><text x="616" y="364" text-anchor="middle" class="sans badge">B</text>
+  <circle cx="616" cy="478" r="14" fill="#1757ac"/><text x="616" y="483" text-anchor="middle" class="sans badge">C</text>
+  <circle cx="616" cy="544" r="14" fill="#1757ac"/><text x="616" y="549" text-anchor="middle" class="sans badge">D</text>
+
+  <!-- Callouts -->
+  <text x="642" y="214" class="sans ct">Frontmatter: always in context</text>
+  <text x="642" y="236" class="sans cd">The tool keeps only name and description loaded (~100 tokens).</text>
+  <text x="642" y="256" class="sans cd">Your request is matched against description to auto-activate.</text>
+
+  <text x="642" y="351" class="sans ct">Workflow: loaded on activation</text>
+  <text x="642" y="373" class="sans cd">Ordered steps the agent runs on your repository: scope, trace</text>
+  <text x="642" y="393" class="sans cd">the build and runtime, gather evidence, write, then review.</text>
+
+  <text x="642" y="470" class="sans ct">Documentation standard: the template</text>
+  <text x="642" y="492" class="sans cd">Sections 1–11 for ARCHITECTURE.md and Section 8 for README.md,</text>
+  <text x="642" y="512" class="sans cd">with tables of exactly what to record for each component.</text>
+
+  <text x="642" y="540" class="sans ct">References: verify upstream</text>
+  <text x="642" y="560" class="sans cd">ROS 2, Docker, OWASP, MuJoCo … docs the agent can check against.</text>
+
+  <!-- Progressive disclosure strip -->
+  <text x="642" y="124" class="sans" style="font-size:11px;font-weight:600;letter-spacing:1.2px;fill:#59636e">PROGRESSIVE DISCLOSURE</text>
+  <rect x="642" y="136" width="152" height="34" rx="17" fill="#cce3fd"/>
+  <text x="718" y="158" text-anchor="middle" class="sans pill">1 · Metadata, always</text>
+  <line x1="798" y1="153" x2="818" y2="153" stroke="#59636e" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="822" y="136" width="166" height="34" rx="17" fill="#84b9f3"/>
+  <text x="905" y="158" text-anchor="middle" class="sans pill">2 · Body, on activation</text>
+  <line x1="992" y1="153" x2="1012" y2="153" stroke="#59636e" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="1016" y="136" width="144" height="34" rx="17" fill="#519ced"/>
+  <text x="1088" y="158" text-anchor="middle" class="sans pill">3 · Links, on demand</text>
+</svg>

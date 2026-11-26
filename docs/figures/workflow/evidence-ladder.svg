@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence levels: how every claim is labelled</title>
+  <desc id="desc">A staircase of four evidence levels with rising confidence: proposed, source-verified, runtime-verified in mock or simulation, and hardware-verified on a bench, HIL rig or robot. A dashed box describes unresolved items.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace}
+    .h1{font-size:26px;font-weight:700;fill:#1f2328}
+    .sub{font-size:15px;fill:#59636e}
+    .lk{font-size:17px;font-weight:700;fill:#1f2328}
+    .dk{font-size:13px;fill:#1f2328}
+    .xk{font-size:12px;fill:#1f2328}
+    .lw{font-size:17px;font-weight:700;fill:#ffffff}
+    .dw{font-size:13px;fill:#ffffff}
+    .xw{font-size:12px;fill:#ffffff}
+    .ax{font-size:13px;fill:#59636e;font-style:italic}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#59636e"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="469" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="58" class="sans h1">Evidence levels: how every claim is labelled</text>
+  <text x="40" y="86" class="sans sub">The skills record where each fact came from. A simulation result is evidence for the simulated configuration only.</text>
+
+  <!-- Unresolved -->
+  <rect x="40" y="116" width="540" height="104" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="62" y="148" class="sans lk">Unresolved</text>
+  <text x="62" y="174" class="sans dk">An open question. Record the affected contract, owner, impact</text>
+  <text x="62" y="194" class="sans dk">and review trigger, for example a ROS distro or firmware upgrade.</text>
+
+  <!-- Steps -->
+  <rect x="40" y="300" width="266" height="120" rx="10" fill="#cce3fd"/>
+  <text x="58" y="330" class="sans lk">Proposed</text>
+  <text x="58" y="354" class="sans dk">A design choice that is not</text>
+  <text x="58" y="372" class="sans dk">in the repository yet</text>
+  <text x="58" y="400" class="mono xk">add twist_mux on /cmd_vel</text>
+
+  <rect x="320" y="250" width="266" height="170" rx="10" fill="#84b9f3"/>
+  <text x="338" y="280" class="sans lk">Source-verified</text>
+  <text x="338" y="304" class="sans dk">Read in files at a pinned</text>
+  <text x="338" y="322" class="sans dk">revision (static review)</text>
+  <text x="338" y="350" class="mono xk">controllers.yaml @ 3f2c1ab</text>
+
+  <rect x="600" y="200" width="266" height="220" rx="10" fill="#2370cd"/>
+  <text x="618" y="230" class="sans lw">Runtime-verified</text>
+  <text x="618" y="254" class="sans dw">Observed in a mock, SIL or</text>
+  <text x="618" y="272" class="sans dw">isolated simulation run</text>
+  <text x="618" y="300" class="mono xw">ros2 topic info -v /cmd_vel</text>
+
+  <rect x="880" y="150" width="266" height="270" rx="10" fill="#0f4a96"/>
+  <text x="898" y="180" class="sans lw">Hardware-verified</text>
+  <text x="898" y="204" class="sans dw">Checked on a bench, HIL rig</text>
+  <text x="898" y="222" class="sans dw">or robot under your procedure</text>
+  <text x="898" y="250" class="mono xw">odom drift &lt; 2 % over 5 m</text>
+
+  <line x1="40" y1="436" x2="1146" y2="436" stroke="#8c959f" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="1140" y="458" text-anchor="end" class="sans ax">more confidence, more setup: never infer a higher step from a lower one</text>
+</svg>

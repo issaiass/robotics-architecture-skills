@@ -1,0 +1,44 @@
+# --- AI tool local state (keep shared skills, ignore personal/session data) ---
+.claude/settings.local.json
+.claude/projects/
+.playwright-mcp/
+.cursor/mcp.json
+.codex/auth.json
+.grok/config.toml
+.windsurf/cache/
+.gemini/tmp/
+
+# --- Secrets and credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+credentials.json
+
+# --- Scratch and generated output ---
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+scratch/
+tmp/
+*.zip
+preview.html
+
+# --- Python / Node helpers used to build figures ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+
+# --- OS and editor files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.code-workspace

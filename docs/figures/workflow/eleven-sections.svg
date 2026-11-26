@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">One documentation standard, eleven sections</title>
+  <desc id="desc">Eleven numbered tiles for the ARCHITECTURE.md sections every skill writes, from Project Structure to Glossary. Section 8, Development and Testing, links to a twelfth tile listing the README.md walkthrough sections.</desc>
+  <style>
+    .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:Consolas,'SFMono-Regular',Menlo,'DejaVu Sans Mono',monospace}
+    .h1{font-size:26px;font-weight:700;fill:#1f2328}
+    .sub{font-size:15px;fill:#59636e}
+    .num{font-size:24px;font-weight:700;fill:#1757ac}
+    .tt{font-size:15px;font-weight:700;fill:#1f2328}
+    .td{font-size:13px;fill:#59636e}
+    .tag{font-size:12px;font-weight:600;fill:#ffffff}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#257de0"/>
+    </marker>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="539" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="58" class="sans h1">One documentation standard, eleven sections</text>
+  <text x="40" y="86" class="sans sub">Every skill writes ARCHITECTURE.md with these numbered sections (adapted from architecture.md). Section 8 also defines the README.md walkthrough.</text>
+
+  <!-- Row 1 -->
+  <g><rect x="40" y="112" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="60" y="148" class="sans num">1</text><text x="60" y="174" class="sans tt">Project Structure</text>
+    <text x="60" y="198" class="sans td">Annotated tree, entry points,</text><text x="60" y="216" class="sans td">where figures and data live</text></g>
+  <g><rect x="325" y="112" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="345" y="148" class="sans num">2</text><text x="345" y="174" class="sans tt">High-Level System Diagram</text>
+    <text x="345" y="198" class="sans td">Real boundaries, command and</text><text x="345" y="216" class="sans td">feedback paths for each mode</text></g>
+  <g><rect x="610" y="112" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="630" y="148" class="sans num">3</text><text x="630" y="174" class="sans tt">Core Components</text>
+    <text x="630" y="198" class="sans td">Owners, interfaces, graph</text><text x="630" y="216" class="sans td">contracts, robot-family notes</text></g>
+  <g><rect x="895" y="112" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="915" y="148" class="sans num">4</text><text x="915" y="174" class="sans tt">Data Stores</text>
+    <text x="915" y="198" class="sans td">Config, calibration, maps, bags,</text><text x="915" y="216" class="sans td">models: owner and retention</text></g>
+
+  <!-- Row 2 -->
+  <g><rect x="40" y="248" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="60" y="284" class="sans num">5</text><text x="60" y="310" class="sans tt">External Integrations / APIs</text>
+    <text x="60" y="334" class="sans td">Middleware, SDKs, firmware,</text><text x="60" y="352" class="sans td">buses, versions, failure modes</text></g>
+  <g><rect x="325" y="248" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="345" y="284" class="sans num">6</text><text x="345" y="310" class="sans tt">Deployment &amp; Infrastructure</text>
+    <text x="345" y="334" class="sans td">Targets, compute placement,</text><text x="345" y="352" class="sans td">readiness, CI, rollback</text></g>
+  <g><rect x="610" y="248" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="630" y="284" class="sans num">7</text><text x="630" y="310" class="sans tt">Security Considerations</text>
+    <text x="630" y="334" class="sans td">Trust boundaries, command</text><text x="630" y="352" class="sans td">authority, sim / live isolation</text></g>
+  <g><rect x="895" y="248" width="265" height="120" rx="10" fill="#e8f1fc" stroke="#257de0" stroke-width="2"/>
+    <text x="915" y="284" class="sans num">8</text><text x="915" y="310" class="sans tt">Development &amp; Testing</text>
+    <text x="915" y="334" class="sans td">Build, test, reproduce; also the</text><text x="915" y="352" class="sans td">contract for the README below</text>
+    <rect x="1064" y="264" width="80" height="22" rx="11" fill="#1757ac"/><text x="1104" y="279" text-anchor="middle" class="sans tag">README</text></g>
+
+  <!-- Row 3 -->
+  <g><rect x="40" y="384" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="60" y="420" class="sans num">9</text><text x="60" y="446" class="sans tt">Future Considerations</text>
+    <text x="60" y="470" class="sans td">Open issues, affected contract,</text><text x="60" y="488" class="sans td">owner and review trigger</text></g>
+  <g><rect x="325" y="384" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="345" y="420" class="sans num">10</text><text x="345" y="446" class="sans tt">Project Identification</text>
+    <text x="345" y="470" class="sans td">Owner, revision, modes,</text><text x="345" y="488" class="sans td">evidence and last update</text></g>
+  <g><rect x="610" y="384" width="265" height="120" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="630" y="420" class="sans num">11</text><text x="630" y="446" class="sans tt">Glossary / Acronyms</text>
+    <text x="630" y="470" class="sans td">TF, QoS, RMW, HIL / SIL,</text><text x="630" y="488" class="sans td">underlay and overlay …</text></g>
+  <g><rect x="895" y="384" width="265" height="120" rx="10" fill="#ffffff" stroke="#257de0" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="915" y="410" class="mono" style="font-size:14px;font-weight:700;fill:#1f2328">README.md walkthrough</text>
+    <text x="915" y="434" class="sans td">Overview · Prerequisites</text>
+    <text x="915" y="453" class="sans td">Quickstart · Start developing</text>
+    <text x="915" y="472" class="sans td">Reproduce the result</text>
+    <text x="915" y="491" class="sans td">Troubleshooting &amp; cleanup</text></g>
+  <line x1="1027" y1="370" x2="1027" y2="381" stroke="#257de0" stroke-width="2" marker-end="url(#ar)"/>
+</svg>
